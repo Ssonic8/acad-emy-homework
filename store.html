@@ -22,48 +22,166 @@
       </ul>
     </nav>
   </header>
+  
   <main class="container">
     <h1>Магазин готовых шаблонов</h1>
     <div class="filter-main">
-      <b>Стоимость:</b>
+      <div class="filter-slider">
+        <p class="filter-title">Стоимость:</p>
+        
+        <div class="range-control">
+          
+        </div>
+        <div class="price-control">
+          от <input class="min-price" type="text" value="0">
+          до <input class="max-price" type="text" value="15000">  
+        </div>
+      </div> 
+      <div class="filter-grid">
+        <p class="filter-title">Сетка:</p>
+        <p><input type="radio" id="grid-1" name="radio-grid" checked><label for="grid-1" class="icon-radio-on">Адаптивная</label></p>
+        <p><input type="radio" id="grid-2" name="radio-grid"><label for="grid-2" class="icon-radio">Фиксированная</label></p>
+        <p><input type="radio" id="grid-3" name="radio-grid"><label for="grid-3" class="icon-radio">Резиновая</label></p>
+      </div>
       
-      
-      <b>Сетка:</b>
-      <ul class="filter-grid">
-        <li class="filter-grid-item">Адаптивная</li>
-        <li class="filter-grid-item">Фиксированная</li>
-        <li class="filter-grid-item">Резиновая</li>
-      </ul>
-      
-      <b>Особенности:</b>
-      <ul class="filter-features">
-        <li class="filter-features-item">Слайдер</li>
-        <li class="filter-features-item">Блок преимуществ</li>
-        <li class="filter-features-item">Новости</li>
-        <li class="filter-features-item">Галерея</li>
-        <li class="filter-features-item">Корзина</li>
-      </ul>
-      
+      <div class="filter-feature">
+        <p class="filter-title">Особенности:</p>
+        
+        <p><input type="checkbox" id="checkbox1" name="chekbox-1" checked><label for="checkbox1" class="icon-checkbox-on">Слайдер</label></p>
+        <p><input type="checkbox" id="checkbox2" name="chekbox-2"><label for="checkbox2" class="icon-checkbox">Блок преимуществ</label></p>
+        <p><input type="checkbox" id="checkbox3" name="chekbox-3"><label for="checkbox3" class="icon-checkbox">Новости</label></p>
+        <p><input type="checkbox" id="checkbox4" name="chekbox-4"><label for="checkbox4" class="icon-checkbox">Галерея</label></p>
+        <p><input type="checkbox" id="checkbox5" name="chekbox-5"><label for="checkbox5" class="icon-checkbox">Корзина</label></p>
+        
+      </div>
     </div>
-  
-  
+    <div class="main-frame">
+      <div class="filter-top">
+         <table>
+           <tr>
+             <td class="filter-top-item filter-title">Сортировать:</td>
+             <td class="filter-top-item">По цене</td>
+             <td class="filter-top-item">По типу</td>
+             <td class="filter-top-item">По названию</td>
+             <td class="filter-top-item"><img src="img/icon-down-dir.svg" alt="down" class="filter-icon"></td>
+             <td class="filter-top-item"><img src="img/icon-up-dir.svg" alt="up" class="filter-icon"></td>
+           </tr>
+         </table>
+      </div>
+      
+      <div class="items">
+        <div class="item-card">
+          <div class="item-top">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <img src="img/img-sedona.jpg" alt="Sedona" width="360" height="576">
+          <div class="item-description">
+            <p class="item-title">Sedona</p>
+            <p class="item-text">Информационный сайт  для туристов</p>
+            <a href="#" class="btn item-price">9 900 руб.</a>
+          </div>
+        </div>
+        
+        <div class="item-card">
+          <div class="item-top">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <img src="img/img-pink.jpg" alt="Pink-app" width="360" height="576">
+          <div class="item-description">
+            <p class="item-title">Pink-app</p>
+            <p class="item-text">Продуктовый лендинг приложения для iOS и Android</p>
+            <a href="#" class="btn item-price">9 900 руб.</a>
+          </div>
+        </div>
+        
+        <div class="item-card">
+          <div class="item-top">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <img src="img/img-barbershop.jpg" alt="Barbershop" width="360" height="576">
+          <div class="item-description">
+            <p class="item-title">Barbershop</p>
+            <p class="item-text">Сайт салоны красоты. Для мужчин, да.</p>
+            <a href="#" class="btn item-price">9 900 руб.</a>
+          </div>
+        </div>
+        
+        <div class="item-card">
+          <div class="item-top">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <img src="img/img-mishka.jpg" alt="Mishka" width="360" height="576">
+          <div class="item-description">
+            <p class="item-title">Mishka</p>
+            <p class="item-text">Интернет-магазин  вязаных игрушек</p>
+            <a href="#" class="btn item-price">9 900 руб.</a>
+          </div>
+        </div>
+        
+        <div class="item-card">
+          <div class="item-top">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <img src="img/img-aplus.jpg" alt="A plus" width="360" height="576">
+          <div class="item-description">
+            <p class="item-title">A plus</p>
+            <p class="item-text">Лендинг курсов повышения квалификации</p>
+            <a href="#" class="btn item-price">9 900 руб.</a>
+          </div>
+        </div>
+        
+        <div class="item-card">
+          <div class="item-top">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <img src="img/img-kvast.jpg" alt="Kvast" width="360" height="576">
+          <div class="item-description">
+            <p class="item-title">Кваст</p>
+            <p class="item-text">Промо-сайт производителя крафтового кваса</p>
+            <a href="#" class="btn item-price">9 900 руб.</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>  
   
   </main>
    
     <footer class="main-footer">
       <div class="footer-map">
-        <p><b>NЁRDS DESIGN STUDIO</b><br>
-         191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br>
-         <p>тел. +7(812)275-75-75 
-         
-        <!--map here-->map
+        <img src="img/map-default.png" alt="map here" class="footer-map-default"> 
+        <div class="footer-map-contacts">
+          <p><b>NЁRDS DESIGN STUDIO</b><br>
+          191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br>
+          <p>тел. +7(812)275-75-75 
+          <a class="button" href="#">Напишите нам</a>
+        </div>
+        <!--map here-->
       </div>
       <div class="footer-social">
        <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social-list">
-          <li><a class="social-button" href="#">ВК</a></li>
-          <li><a class="social-button" href="#">ФБ</a></li>
-          <li><a class="social-button" href="#">ИН</a></li>
+          <li><a class="social-button" href="#">
+            <img src="img/vk-icon.svg" alt="vkontakte" class="social-button-icon"></a>
+          </li>
+          <li><a class="social-button" href="#">
+            <img src="img/fb-icon.svg" alt="facebook" class="social-button-icon"></a>
+          </li>
+          <li><a class="social-button" href="#">
+            <img src="img/insta-icon.svg" alt="instagram" class="social-button-icon"></a>
+          </li>
         </ul>
       </div>
       <div class="footer-discount">        
@@ -75,7 +193,7 @@
     <section class="modal modal-form">
       <h2>Напишите нам</h2> 
       <!--form here-->
-      <span class="modal-close">x</span>
+      <span class="modal-close"><img src="img/close-cross.svg" alt="x"></span>
     </section> 
       
 </body>
