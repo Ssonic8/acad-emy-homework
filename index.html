@@ -2,114 +2,130 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>Title</title>
 </head>
 <body>
   <header class="main-header">
-    <nav class="main-navigation">
+    <nav class="main-navigation container">
       <a class="main-header-logo">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип">
       </a>
       <ul class="site-navigation">
-        <li><a href="about.html">Студия</a></li>
-        <li><a href="clients.html">Клиенты</a></li>
+        <li><a class="current-page" href="index.html">Студия</a></li>
+        <li><a >Клиенты</a></li>
         <li><a href="store.html">Магазин</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
+        <li><a >Контакты</a></li>
       </ul>
       <ul class="user-navigation">
-        <li class="login-link"><a href="#" class="cart-link"><img src="img/cart-icon.svg" alt="cart"> Корзина</a></li>
+        <li class="login-link"><a href="#" class="cart-link"> Корзина</a></li>
       </ul>
     </nav>
   </header>
-  <main class="container">
-   
+  
+  <main>   
     <h1 class="visually-hidden">nerds</h1>
-    
-    <section class="carousel">
-      <h2 class="visually-hidden">carousel</h2>
-      
-      <div class="carousel-slide">
-        <h3 class="carousel-header">Долго, дорого, скурпулезно.</h3>
-        <p class="carousel-main">Математически выверенный дизайн<br>
-          для вашего сайта или мобильного приложения.</p>
-          <img src="img/slide1.png" alt="slide1" width="698" height="413">
-      </div>
-      <div class="carousel-slide">
-        <h3 class="carousel-header">Любим математику как никто другой</h3>
-        <p class="carousel-main">Никакого креатива, только математические формулы<br> 
-          для расчета идеальных пропорций.</p>
-          <img src="img/slide2.png" alt="slide2" width="663" height="430">
-      </div>
-      <div class="carousel-slide">
-        <h3 class="carousel-header">Только ночь, только хардкор</h3>
-        <p class="carousel-main">Работать днем, как все? Мы против этого.<br>
-          Ближе к полуночи работа только начинается.</p>
-          <img src="img/slide3.png" alt="slide3" width="759" height="411">
-      </div>
-      
-      <div class="carousel-button">
-        <a href="#">Узнать больше</a>
-      </div>
-      <input type="radio" class="carousel-radio">
-      <input type="radio" class="carousel-radio">
-      <input type="radio" class="carousel-radio">
-    </section>
-    
-    <section class="features">
+    <div class="bg-grey">
+      <section class="container carousel">
+        <h2 class="visually-hidden">carousel</h2>
+
+        <div class="carousel-slide carousel-slide-active">
+          <div class="carousel-text">
+            <h3 class="carousel-header">Долго, дорого,<br>скурпулезно.</h3>
+            <p class="carousel-main">Математически выверенный дизайн<br>
+              для вашего сайта или мобильного приложения.</p>
+            <a class="button carousel-button" href="#">Узнать больше</a>
+            
+          </div>  
+            <img src="img/slide1.png" alt="slide1" width="698" height="413">
+        </div>
+        <div class="carousel-slide">
+          <div class="carousel-text">
+            <h3 class="carousel-header">Любим математику<br>как никто другой</h3>
+            <p class="carousel-main">Никакого креатива, только математические формулы<br> 
+              для расчета идеальных пропорций.</p>
+            <a class="button carousel-button" href="#">Узнать больше</a>
+          </div>     
+            <img src="img/slide2.png" alt="slide2" width="663" height="430">
+        </div>
+        <div class="carousel-slide">
+         <div class="carousel-text">
+              <h3 class="carousel-header">Только ночь,<br>только хардкор</h3>
+              <p class="carousel-main">Работать днем, как все? Мы против этого.<br>
+                Ближе к полуночи работа только начинается.</p>
+              <a class="button carousel-button" href="#">Узнать больше</a>           
+          </div>
+            <img src="img/slide3.png" alt="slide3" width="759" height="411">
+        </div>
+        
+        <div class="carousel-dots">
+          <div class="dot dot-active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </section>
+    </div>
+    <section class="container features">
       <ul class="features-list">
         <li class="feature-item">
           <img src="img/illustration-1.png" alt="web-sites" class="feature-image" width="300" height="146"> 
           <h3>Веб-сайты</h3>
-          <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-          <a class="button" href="#">Заказать</a>
+          <p>Мир никогда не будет прежним<br>после того как увидит ваш сайт</p>
+          <a class="button feature-button1" href="#">Заказать</a>
         </li>
         <li class="feature-item">
           <img src="img/illustration-2.png" alt="apps" class="feature-image" width="300" height="146">         
           <h3>Приложения</h3>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="button" href="#">Заказать</a>
+          <p>Покорите топ-10 приложений в<br>AppStore и Google Play</p>
+          <a class="button feature-button2" href="#">Заказать</a>
         </li>
         <li class="feature-item">
           <img src="img/illustration-3.png" alt="presentations" class="feature-image"  width="300" height="146"> 
           <h3>Презентации</h3>
-          <p>Вы даже не подозреваете,  насколько вы изумительны!</p>
-          <a class="button" href="#">Заказать</a>
+          <p>Вы даже не подозреваете,<br>насколько вы изумительны!</p>
+          <a class="button feature-button3" href="#">Заказать</a>
         </li>
       </ul>
     </section>
-    
-    <section class="promo">
-      <div class="promo-main">
-        <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не поладая рук, как роботы</p>
-        <ul class="promo-main-ul">
-          <li>Выполняем заказы на разработку:</li>
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для IOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>        
-      </div>
-      
-      <div class="promo-side">
-        <img src="img/nerds-illustration.png" alt="nerds logo" class="promo-logo" width="360" height="208">
-        <p>с 2004 года Любим точность во всем:</p>
-        <table class="promo-table">
-          <tr class="promo-table-percent">
-            <td>146%</td>
-            <td>100%</td>
-            <td>50%</td>
-          </tr>
-          <tr class="promo-table-description">
-            <td>Уровень самоотдачи</td>
-            <td>Соблюдение  сроков</td>
-            <td>Минимальная предоплата</td>
-          </tr>
-        </table>
-      </div>
-      
-    </section>
-    
+    <div class="container">
+      <img src="img/line.png" alt="" class="divide">
+    </div>
+    <div class="container">
+      <section class="promo">
+        <div class="promo-main">
+          <h2>Мы — маленькая, но гордая <br>дизайн-студия из Краснодара.</h2>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не поладая рук, как роботы</p>
+          <p class="promo-main-header">Выполняем заказы на разработку:</p>
+           <ul class="promo-main-ul">
+            <li><span></span>Веб-сайтов любой сложности</li>
+            <li><span></span>Мобильных приложений для IOS и Android</li>
+            <li><span></span>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>        
+        </div>
+
+        <div class="promo-side">
+          <img src="img/nerds-illustration.png" alt="nerds logo" class="promo-logo" width="360" height="208">
+          <p>с 2004 года Любим точность во всем:</p>
+          <table class="promo-table">
+            <tr class="promo-table-percent">
+              <td>146<sup>%</sup></td>
+              <td>100<sup>%</sup></td>
+              <td>50<sup>%</sup></td>
+            </tr>
+            <tr class="promo-table-description">
+              <td>Уровень самоотдачи</td>
+              <td>Соблюдение  сроков</td>
+              <td>Минимальная предоплата</td>
+            </tr>
+          </table>
+        </div>      
+      </section>
+    </div>
+    <div class="container">
+      <img src="img/line.png" alt="" class="divide">
+    </div>
     <section class="partners">
      <h2 class="visually-hidden">Наши партнеры</h2>
       <ul class="partners-list">
@@ -127,45 +143,74 @@
         </li>
       </ul>
     </section>
-    
+    <div class="container">
+      <img src="img/line.png" alt="" class="divide">
+    </div>
   </main>
    
     <footer class="main-footer">
       <div class="footer-map">
-        <img src="img/map-default.png" alt="map here" class="footer-map-default"> 
+       
         <div class="footer-map-contacts">
-          <p><b>NЁRDS DESIGN STUDIO</b><br>
-          191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br>
-          <p>тел. +7(812)275-75-75 
-          <a class="button" href="#">Напишите нам</a>
+          <div class="footer-map-text">
+            <b class="footer-map-header">NЁRDS DESIGN STUDIO<br></b>
+            <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+            <p class="footer-map-phone">тел. +7(812)275-75-75</p> 
+            <button class="button callback-button" type="button">Напишите нам</button>
+          </div>
         </div>
         <!--map here-->
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa6cbdf7ebd923ba629bff021aa53379024708564a40fa4090b2a926fa5272af3&amp;source=constructor" width="100%" height="416" frameborder="0" scroll=false></iframe>
+      
+        <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa6cbdf7ebd923ba629bff021aa53379024708564a40fa4090b2a926fa5272af3&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;scroll=false"></script> -->
+
+        <!-- <img src="img/map-default.png" width="1440" height="416" class="footer-map-default" alt="Санкт-Петербург,
+            ул. Большая Конюшенная, д. 19/8"> -->
       </div>
-      <div class="footer-social">
-       <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="social-list">
-          <li><a class="social-button" href="#">
-            <img src="img/vk-icon.svg" alt="vkontakte" class="social-button-icon"></a>
-          </li>
-          <li><a class="social-button" href="#">
-            <img src="img/fb-icon.svg" alt="facebook" class="social-button-icon"></a>
-          </li>
-          <li><a class="social-button" href="#">
-            <img src="img/insta-icon.svg" alt="instagram" class="social-button-icon"></a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-discount">        
-          <h3>Давайте дружить, это выгодно!</h3>
-          <p>Скидка 10% для друзей из социальных сетей</p>
+      <div class="footer-bottom container">
+        <div class="footer-social">
+         <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="social-list">
+            <li><a class="social-button" href="#">
+              <img src="img/vk-icon.svg" alt="vkontakte" class="social-button-icon"></a>
+            </li>
+            <li><a class="social-button" href="#">
+              <img src="img/fb-icon.svg" alt="facebook" class="social-button-icon"></a>
+            </li>
+            <li><a class="social-button" href="#">
+              <img src="img/insta-icon.svg" alt="instagram" class="social-button-icon"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-discount">        
+            <h3>Давайте дружить, это выгодно!</h3>
+            <p>Скидка 10% для друзей из социальных сетей</p>
+        </div>
       </div>
     </footer>
     
-    <section class="modal modal-form">
-      <h2>Напишите нам</h2> 
-      <!--form here-->
-      <span class="modal-close"><img src="img/close-cross.svg" alt="x"></span>
-    </section> 
+    <section class="modal modal-form visually-hidden">
+      <h2>Напишите нам</h2>
+      <form action="" class="callback-form" method="post">
+        <div class="callback-line">
+           <div class="half-width">
+            <label for="user-name">Ваше имя:</label>
+            <input type="text" id="user-name" class="callback-name" placeholder="Имя Фамилия">
+          </div>        
+          <div class="half-width">
+            <label for="user-email">Ваш e-mail:</label>
+            <input type="text" id="user-email" class="callback-email" placeholder="email@example.com">          
+          </div>
+        </div>
+        <div class="callback-textarea">
+          <label for="user-text">Текст письма:</label>
+          <textarea type="text" id="user-text" class="callback-text" placeholder="В свободной форме"></textarea>          
+        </div>
+        <button class="button form-button" type="submit">Отправить</button>
+      </form>
       
+      <button class="modal-close" type="button">Закрыть</button>
+    </section> 
+  <script type="text/javascript" src="js/main.js"></script>    
 </body>
 </html>
